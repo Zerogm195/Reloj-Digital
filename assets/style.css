@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; /* <- elimina el espacio extra que provoca el scroll */
+    text-align: center;
+    /*background-color: #252424;*/
+    background-image:url("tetodance.gif"); /*Imagen intercambiable*/
+    backdrop-filter: brightness(0.3) blur(3px); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: system-ui;
+    font-size: 1.2rem;
+    min-height: 100vh; /*Se establece un viewport minimo de 100vh al body*/
+    display:flex;
+    align-items: center; /*Se alinean los elementos al centro verticalmente*/
+    justify-content: center; /*Se alinean los elementos al centro horizontalmente */
+}
+
+#elementos{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#boton{
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    border: none;
+    border-radius: 12px;
+    background-color: aquamarine;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+#boton:hover{
+    cursor:pointer;
+    background-color: rgb(79, 255, 220);
+}
+
+#reloj{
+
+    font-size: 1.6rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 0;
+
+}
+
+#dia{
+
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+
